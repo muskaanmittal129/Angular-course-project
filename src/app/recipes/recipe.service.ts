@@ -19,7 +19,7 @@ export class RecipeService{
          
         new Recipe('Delicious!!!' ,
          'this is simply a test',
-          'https://www.thecookierookie.com/wp-content/uploads/2019/08/pasta-pomodoro-recipe-3-of-7.jpg',
+          'https://www.thecookierookie.com/wp-content/uploads/2019/08/pasta-pomodoro-recipe-3-of-7.jpg ',
           [new Ingredient('burger',1),
           new Ingredient('toast',10)
         ])
@@ -31,6 +31,10 @@ export class RecipeService{
      
 getRecipes(){
     return this.recipes.slice();
+}
+
+getRecipe(index:number){
+    return this.recipes[index];
 }
 addIngredientToSl(ingredients:Ingredient[]){
     this.slService.addIngredients(ingredients);
