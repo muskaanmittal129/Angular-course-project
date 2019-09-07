@@ -39,5 +39,5 @@ getRecipe(index:number){
 addIngredientToSl(ingredients:Ingredient[]){
     this.slService.addIngredients(ingredients);
 
-}
+} 
 }
